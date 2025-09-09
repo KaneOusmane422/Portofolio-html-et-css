@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ousmane Kane — Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="brand">Ousmane <span style="color:var(--accent)">Kane</span></div>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="toggle" aria-pressed="false" title="Basculer le thème">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / ACCUEIL -->
+    <section id="accueil" class="hero" aria-label="Accueil">
+      <div class="hero-left">
+        <h1>Ousmane Kane</h1>
+        <p>Développeur Web Junior — HTML5 • CSS3 • JavaScript</p>
+        <div class="hero-actions">
+          <a class="btn cta" href="#projets">Découvrir mes projets</a>
+          <a class="btn" href="#contact">Me contacter</a>
+        </div>
+        <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">Passionné par la création d'interfaces propres et accessibles. Je construis des expériences web modernes, performantes et responsives.</p>
+      </div>
+      <div class="hero-right">
+        <!-- Remplacez photo.jpg dans /images par votre photo professionnelle (optionnel) -->
+        <div class="photo"><img src="./ouze.png" alt="Photo professionnelle d'Ousmane Kane"></div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="a-propos" aria-label="À propos de moi">
+      <h2>À propos de moi</h2>
+      <div class="about-grid">
+        <div>
+          <p>Je suis étudiant/développeur junior spécialisé en front-end. J'aime transformer des designs en interfaces pixel-perfect, optimiser l'expérience utilisateur et apprendre continuellement de nouvelles technologies.</p>
+          <p>Objectif : Participer à des projets réels pour consolider mes compétences et contribuer à des produits utiles.</p>
+        </div>
+        <aside>
+          <h3 style="margin-top:0;margin-bottom:8px;font-size:1rem">Compétences</h3>
+          <div class="skills">
+            <span class="skill"><i class="fa fa-html5" aria-hidden="true"></i> HTML5</span>
+            <span class="skill"><i class="fa fa-css3" aria-hidden="true"></i> CSS3</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">Git & GitHub</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" aria-label="Mes projets">
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <!-- Projet 1 -->
+        <article class="project-card">
+          <img src="images/projet1.png" alt="Capture projet 1">
+          <div>
+            <h3>Gestionnaire de contacts (C++ - console)</h3>
+            <p>Application console pour ajouter, modifier, rechercher et supprimer des contacts. Projet réalisé en cours de programmation.</p>
+          </div>
+          <div class="project-meta">
+            <div class="project-links">
+              <a href="#" aria-label="Voir le code source sur GitHub"><i class="fa fa-github"></i></a>
+              <a href="#" aria-label="Voir le site en ligne"><i class="fa fa-external-link"></i></a>
+            </div>
+            <span style="color:var(--muted);font-size:0.9rem">Langages : C++</span>
+          </div>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-card">
+          <img src="images/projet2.png" alt="Capture projet 2">
+          <div>
+            <h3>Portfolio Onepage (HTML/CSS/JS)</h3>
+            <p>Site vitrine construit avec HTML, CSS Grid/Flexbox et JavaScript pour les interactions. Design responsive et animations subtiles.</p>
+          </div>
+          <div class="project-meta">
+            <div class="project-links">
+              <a href="#"><i class="fa fa-github"></i></a>
+              <a href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+            <span style="color:var(--muted);font-size:0.9rem">Front-end</span>
+          </div>
+        </article>
+
+        <!-- Projet 3 (fictif possible) -->
+        <article class="project-card">
+          <img src="images/projet3.png" alt="Capture projet 3">
+          <div>
+            <h3>Mini blog (fictif)</h3>
+            <p>Prototype d'un petit blog statique avec mise en page claire et système simple de navigation par tags (exemple).</p>
+          </div>
+          <div class="project-meta">
+            <div class="project-links">
+              <a href="#"><i class="fa fa-github"></i></a>
+              <a href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+            <span style="color:var(--muted);font-size:0.9rem">Static</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contactez-moi">
+      <h2>Contactez-moi</h2>
+      <div style="display:grid;grid-template-columns:1fr;gap:14px;">
+        <form class="contact-form" action="#" method="post" novalidate>
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+          <input type="text" name="subject" placeholder="Sujet">
+          <textarea name="message" placeholder="Votre message"></textarea>
+          <button type="submit" class="btn cta">Envoyer</button>
+        </form>
+
+        <div>
+          <h3>Réseaux professionnels</h3>
+          <div class="socials">
+            <a href="https://github.com/votre-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 - Ousmane Kane. Tous droits réservés.
+  </footer>
+
+
+</body>
+</html>
